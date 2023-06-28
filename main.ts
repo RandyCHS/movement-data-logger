@@ -25,8 +25,14 @@ input.onButtonPressed(Button.AB, function () {
 input.onButtonPressed(Button.B, function () {
     logging = false
     basic.showIcon(IconNames.No)
+    basic.showNumber(shakes)
+})
+input.onGesture(Gesture.Shake, function () {
+    shakes += 1
 })
 let logging = false
+let shakes = 0
+shakes = 0
 logging = false
 basic.showIcon(IconNames.No)
 datalogger.setColumnTitles(
